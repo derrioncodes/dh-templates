@@ -14,8 +14,22 @@ ul {
 }
 
 header {
-    /* background-color: ; */
+    /* START ---- TO CREATE FIXED POSITION */
+        /* background-color: #ffffff;
+        position: fixed;
+        top:0;
+        left:0;
+        width: 100%; */
+    /* END ---- TO CREATE FIXED POSITION */
+
+    /* START ---- TO CREATE STICKY POSITION */
+        /* position: sticky;
+        background-color: #ffffff;
+        top: 0; */
+    /* END ---- TO CREATE STICKY POSITION */
+    
     box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.3);
+    z-index: 2;
 }
 
 nav{
@@ -92,7 +106,7 @@ nav .open-mobile-menu-btn{
 
     position: absolute;
     top: 0;
-    z-index: 2;    
+    z-index: 3;    
 }
 
 .mobile-nav {
