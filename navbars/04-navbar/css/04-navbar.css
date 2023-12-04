@@ -220,7 +220,7 @@ nav .right-side-nav_mobile .open-mobile-menu-btn{
 /* --------- END OF MOBILE NAV -------- */
 
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
 
     nav .menu {
         display: none;
@@ -245,6 +245,8 @@ nav .right-side-nav_mobile .open-mobile-menu-btn{
     top: 60px;
     width: 100%;
     z-index: 4;
+    /* box-shadow: 0px 25px 20px -30px rgba(0,0,0,0.3); */
+    box-shadow: -1px 9px 5px -6px rgba(0,0,0,0.3);
 
 }
 
@@ -256,19 +258,40 @@ nav .right-side-nav_mobile .open-mobile-menu-btn{
     top: 0;
 }
 
+/* .submenu::after {
+    content: '';
+    position: absolute;
+    /* top: 60px; */
+    /* bottom: 0;
+    width: 100%;
+    z-index: -1;
+
+    box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.3);
+} */ 
+
 .submenu.show{
     display: flex;
 }
 
 .submenu .category{
-    display: grid;
-    grid-template-columns: auto;
+    /* display: grid;
+    grid-template-columns: auto; */
+
+    column-count: 4;
+    page-break-inside: avoid;
+    break-inside: avoid;
     padding-top: 30px;
+    column-gap: 2rem;
+    /* width: 90%;
+    margin: 0 auto; */
 }
 
 .submenu .category_list{
     padding: 0 1.6rem 2rem;
-    grid-row: content;
+    /* grid-row: content; */
+    page-break-inside: avoid;
+    break-inside: avoid;
+    
     
     
 }
